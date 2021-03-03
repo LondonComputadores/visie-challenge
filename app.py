@@ -32,7 +32,7 @@ tbl = '''<table>
 for row in result:
     a = "<tr><td>%s</td>"%row[0]
     p.append(a)
-    b = "<td>%s <a href= >delete</a></td>"%row[1]
+    b = "<td>%s <a href= >Remover</a></td>"%row[1]
     p.append(b)
     
 contents = '''
@@ -43,20 +43,21 @@ contents = '''
 <link rel="stylesheet" href="app.css" type="text/css">
 <title>Visie Python</title>
 </head>
-<body>  
-<h1>Tabela Pessoas</h1>
+<body>
 <table class="table">
 %s
 </table>
-<form action="/action_page.php" class="form">
+<div class="form">
+<form action="/action_page.php">
   <label for="fname">Nome:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">RG:</label><br>
-  <input type="text" id="lname" name="lname" value="123"><br><br>
+  <input type="text" id="lname" name="lname" value="123"><br>
   <label for="lname">CPF:</label><br>
   <input type="text" id="lname" name="lname" value="123456"><br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Salvar">
 </form>
+</div>
 </body>
 </html>
 '''%(p)
