@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(243, 243, 243);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.table, h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    align-items: center;
+}
